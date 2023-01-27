@@ -1,0 +1,150 @@
+.az_calender * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.az_calender {
+  max-width: 350px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.144);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.111);
+}
+
+/* header */
+.az_calender .cl_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.az_calender .cl_header > div {
+  position: relative;
+  padding: 0 10px;
+  flex-grow: 1;
+}
+.dropdown_btn_992v {
+  text-align: center;
+  border: 0;
+  background-color: #fff;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+}
+.dropdown_e0c58 {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 5;
+  box-shadow: 0 0 10px #00000030;
+}
+.dropdown_e0c58 button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.az_calender .cl_header > button {
+  border: 0;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s all ease-in-out;
+}
+.az_calender .cl_header button:hover {
+  background-color: #ccc;
+}
+
+/* body */
+.az_calender .cl_body {
+  padding: 10px 0;
+  min-height: 290px;
+}
+.az_calender .cl_body .weeks,
+.az_calender .cl_body .dates {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.az_calender .cl_body .dates {
+  flex-wrap: wrap;
+}
+.az_calender .cl_body .weeks > div,
+.az_calender .cl_body .dates > button {
+  width: calc(100% / 7);
+  text-align: center;
+}
+.az_calender .cl_body .dates > button {
+  width: calc(100% / 7);
+  text-align: center;
+}
+.az_calender .cl_body .dates > button {
+  width: calc(100% / 7);
+  text-align: center;
+}
+.az_calender .cl_body .dates > button {
+  background-color: #fff;
+  border: 0;
+  height: 40px;
+  transition: 0.05s all ease-in-out;
+  position: relative;
+}
+.az_calender .cl_body .dates > button:hover {
+  background-color: rgb(233, 232, 232);
+}
+.az_calender .cl_body .dates > button.active {
+  color: #fff;
+  background-color: #4b4efc;
+}
+.az_calender .cl_body .dates > button.active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+/* footer */
+.az_calender .cl_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  column-gap: 10px;
+}
+.az_calender .cl_footer button {
+  flex-grow: 1;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s all ease-in-out;
+  text-align: center;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.az_calender .cl_footer button:first-child {
+  background-color: #ef4444;
+}
+.az_calender .cl_footer button:last-child {
+  background-color: #4b4efc;
+}
+.az_calender .cl_footer button:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
